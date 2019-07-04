@@ -9,8 +9,8 @@
 <body>
     <h1>About Page</h1>
 
-    @foreach ($projects as $project)
-        <h3>{{ $project->name }}</h3>
+    @foreach ($entries as $entry)
+        <h3>{{ $entry->label }}</h3>
     @endforeach
 </body>
 </html>

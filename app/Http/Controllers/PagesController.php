@@ -3,39 +3,50 @@
 namespace App\Http\Controllers;
 
 use App\color;
+use Illuminate\Http\Request;
+use App\Http\Requests;
+use App\Http\Controllers\Controller;
 
-class PagesController extends Controller
-{
-    public function home()
-    {
-        return view('contact', [
-            'foo' => 'bar'
+class PagesController extends Controller {
+
+    public function survey() {
+
+        $colors = [
+            'red-ish',
+            'green-ish',
+            'blue-ish',
+            'orange-ish',
+            'yellow-ish',
+            'pink-ish',
+            'purple-ish',
+            'brown-ish',
+            'grey-ish'
+        ];
+            
+        return view('survey', [
+            'colors' => $colors
         ]);
-    }
-
-    public function about()
-    {
-        $projects = color::all();
         
-        return view('about', compact('projects'));
     }
 
-    public function survey()
-    {
-        $projects = color::all();
+    public function about() {
+
+        $entries = color::all();
         
-        return view('survey', compact('projects'));
+        return view('about', compact('entries'));
     }
 
-    public function store()
-    {        
-        $projects = new color();
+    public function ajaxRequestPost(Request $request) {
 
-        $projects->name = request('name');
+        $entry = new color();
+        $entry->label = $request->label;
+        $entry->r = $request->r;
+        $entry->g = $request->g;
+        $entry->b = $request->b;
+        $entry->save();
 
-        $projects->save();
+        return response()->json(['success'=>'Yes!']);
 
-
-        return redirect('/about');
     }
+
 }

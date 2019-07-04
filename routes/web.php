@@ -11,27 +11,7 @@
 |
 */
 
-Route::get('/', 'PagesController@home');
+Route::get('/', 'PagesController@survey');
+Route::post('/about', 'PagesController@store');
 Route::get('/about', 'PagesController@about');
-Route::get('/survey', 'PagesController@survey');
-Route::post('/survey', 'PagesController@store');
-
-// Route::get('/', function () {
-
-//         $colors = [
-//             'blue',
-//             'green',
-//             'black',
-//             'yellow',
-//             'white',
-//             'pink'
-//         ];
-
-//     return view('survey', [
-//         'colors' => $colors
-//     ]);
-// });
-
-// Route::get('/about', function () {
-//     return view('about');
-// });
+Route::post('/ajaxRequest', 'PagesController@ajaxRequestPost');
