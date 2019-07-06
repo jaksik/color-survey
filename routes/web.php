@@ -12,6 +12,5 @@
 */
 
 Route::get('/', 'PagesController@survey');
-Route::post('/about', 'PagesController@store');
-Route::get('/about', 'PagesController@about');
 Route::post('/ajaxRequest', 'PagesController@ajaxRequestPost');
+Route::get('/about', 'PagesController@about');

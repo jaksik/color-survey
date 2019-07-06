@@ -39,6 +39,7 @@ class PagesController extends Controller {
     public function ajaxRequestPost(Request $request) {
 
         $entry = new color();
+        $entry->uid = $request->uid;
         $entry->label = $request->label;
         $entry->r = $request->r;
         $entry->g = $request->g;
