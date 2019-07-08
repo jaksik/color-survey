@@ -121,10 +121,9 @@
 
         
         <script>
-            let r, g, b, rgb;
-            let uid = Math.floor(Math.random() * 900000) + 100000;
 
             $( document ).ready(function() {
+                getCount();
                 genNewNums();
             });
 
@@ -134,6 +133,9 @@
                 }
             });
 
+            let r, g, b, rgb;
+            let uid = Math.floor(Math.random() * 900000) + 100000;
+
             $(".color-item").click(function(e){
                 e.preventDefault();
                 var label = ($(this).attr("value"));
@@ -142,7 +144,8 @@
                     url:'/ajaxRequest',
                     data:{uid:uid, label:label, r:r, g:g, b:b},
                     success:function(data){
-                        console.log(data.success);
+                        $("#entries").empty();
+                        $("#entries").text(data.success);
                         genNewNums();
                     }
                 });
@@ -158,9 +161,14 @@
                 g = genRamNum();
                 b = genRamNum();
                 rgb = "rgb(" + r + ", " + g + ", " + b + ")";
-                console.log(rgb)
                 document.getElementById("canvas").style.backgroundColor = rgb;
             }
+
+            getCount = () => {
+                $.get("/entries", function(data) {
+                    document.getElementById("entries").innerHTML = data.success;
+                })
+            }    
 
         </script>
         

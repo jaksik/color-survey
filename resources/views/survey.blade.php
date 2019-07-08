@@ -10,7 +10,7 @@
 
         <div id="canvas"></div>
         <p style="text-align:center">Click the button that best describes the color above.</p>
-
+        <p style="text-align:center">Entries so far: <strong><span id="entries"></strong></span>; Goal: <strong>10,000</strong></p>
         <div class="item-wrapper">
             @foreach ($colors as $color)
             <div class="item-container">

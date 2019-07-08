@@ -29,15 +29,18 @@ class PagesController extends Controller {
         
     }
 
-    public function about() {
-
+    public function entries() {
         $entries = color::all();
-        
+        $entries = count($entries);
+        return response()->json(['success'=>$entries]);
+    }
+
+    public function about() {
+        $entries = color::all();
         return view('about', compact('entries'));
     }
 
     public function ajaxRequestPost(Request $request) {
-
         $entry = new color();
         $entry->uid = $request->uid;
         $entry->label = $request->label;
@@ -46,8 +49,9 @@ class PagesController extends Controller {
         $entry->b = $request->b;
         $entry->save();
 
-        return response()->json(['success'=>'Yes!']);
-
+        $entries = color::all();
+        $entries = count($entries);
+        return response()->json(['success'=>$entries]);
     }
 
 }
