@@ -1,60 +1,36 @@
- <h2>About the Color Survey</h2>
+## About the Color Survey
 
-    <div id="about">
-      
-        <div class="indent-one">
-
-            <p class="about-text">Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).</p>
-      
-        </div>
-
-        <h5>------------------------------------------------------------------------------------</h5>
+Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).
        
-        <h2>How it works</h2>
+## How it works
 
-        <p class="indent-one about-text">The survey randomly generates an "R, G, B" value, then displays its corresponding color on the screen. The user will then click the button that best describes the color. The "R, G, B" value and user selected label are logged to a database in a format that looks something like this...</p>
+The survey randomly generates an "R, G, B" value, then displays its corresponding color on the screen. The user will then click the button that best describes the color. The "R, G, B" value and user selected label are logged to a database in a format that looks something like this...
 
-        <div class="code-block about-text">
-            surveyData= [</br>
-                <div class="indent-one">{</br></div>
-                    <div class="indent-two">label: green-ish,</br></div>
-                    <div class="indent-two">r: 61,</br></div>
-                    <div class="indent-two">g: 106,</br></div>
-                    <div class="indent-two">b: 17</br></div>
-                <div class="indent-one">},</br></div>
-                <div class="indent-one">{</br></div>
-                    <div class="indent-two">label: yellow-ish,</br></div>
-                    <div class="indent-two">r: 225,</br></div>
-                    <div class="indent-two">g: 220,</br></div>
-                    <div class="indent-two">b: 21</br></div>
-                <div class="indent-one">},</br></div>
-                <div class="indent-one">{</br></div>
-                    <div class="indent-two">label: pink-ish,</br></div>
-                    <div class="indent-two">r: 194,</br></div>
-                    <div class="indent-two">g: 34,</br></div>
-                    <div class="indent-two">b: 138</br></div>
-                <div class="indent-one">}</br></div>
-            ]
-        </div>
+```javascript
+var surveyData = [
+    {
+        label: green-ish,
+        r: 61,
+        g: 106,
+        b: 17
+    },
+    {
+        label: yellow-ish,
+        r: 225,
+        g: 220,
+        b: 21
+    },
+    {
+        label: pink-ish,
+        r: 194,
+        g: 34,
+        b: 138
+    }
+]
+```
         
-        <h5>------------------------------------------------------------------------------------</h5>
-        
-        <div style="text-align:center" class="item-wrapper">
-            <div class="item-container">
-                <h2>Source Code:</h2>
-                <p><a href="https://github.com/jaksik/color-survey" target="_blank">Color Survey Code</a></p>
-            </div>
+## Inspired By:
+  <a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a>
 
-            <div class="item-container">
-                <h2>Inspired By:</h2>
-                <p><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></p>
-            </div>
-
-            <div class="item-container">
-            <h2>Created By:</h2>
-                <p><a href="https://connorjaksik.com" target="_blank">Connor Jaksik</a></p>
-           </div>
-        </div>
-
-    </div>
-    
+  ## Created By:
+  <a href="https://connorjaksik.com" target="_blank">Connor Jaksik</a>
