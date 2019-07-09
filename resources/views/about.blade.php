@@ -11,7 +11,7 @@
       
         <div class="indent-one">
 
-            <p><strong>Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).</strong></p>
+            <p class="about-text">Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).</p>
       
         </div>
 
@@ -19,9 +19,9 @@
        
         <h2>How it works</h2>
 
-        <p class="indent-one">The survey randomly generates an "R, G, B" value, then displays its corresponding color on the screen. The user will then click the button that best describes the color. The "R, G, B" value and user selected label are logged to a database in a format that looks something like this...</p>
+        <p class="indent-one about-text">The survey randomly generates an "R, G, B" value, then displays its corresponding color on the screen. The user will then click the button that best describes the color. The "R, G, B" value and user selected label are logged to a database in a format that looks something like this...</p>
 
-        <div class="code-block">
+        <div class="code-block about-text">
             surveyData= [</br>
                 <div class="indent-one">{</br></div>
                     <div class="indent-two">label: green-ish,</br></div>

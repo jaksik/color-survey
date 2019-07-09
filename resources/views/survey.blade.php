@@ -14,7 +14,7 @@
         <div class="item-wrapper">
             @foreach ($colors as $color)
             <div class="item-container">
-                <button name="color-item" class="color-item" value={{ $color }} ><strong>{{ $color }}</strong></button>
+                <button name="color-item" class="color-item" value={{ $color }} ><strong class="button-text">{{ $color }}</strong></button>
             </div>
             @endforeach
         </div>

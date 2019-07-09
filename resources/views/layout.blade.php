@@ -45,6 +45,10 @@
                 margin: 0 auto;
             }
 
+            .about-text {
+                font-size: 20px;
+            }
+
             #canvas {
                 width: 250px;
                 height: 250px;
@@ -95,8 +99,8 @@
             }
 
             @media only screen and (max-width: 576px){
-                .color-item {
-                    font-size: 15px;
+                .button-text {
+                    font-size: 14px;
                 }
             }
 
