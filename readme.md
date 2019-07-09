@@ -1,6 +1,18 @@
+# Color Survey for Machine Learning Experiment
+
+<img alt="preview" src="./public/images/preview.PNG" width="160" align="center"/>
+
 ## About the Color Survey
 
-Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).
+Submit entries using the Color Survey to help create data for a machine learning experiment. Go to 
+<a href="http://colorsurvey.xyz" target="_blank">www.colorsurvey.xyz</a> to submit an entries. See how the data is used to train a front-end machine learning model to classify colors in an Angular application at a Denver area meetup in Fall 2019 (check back soon for date and location).
+
+#### Technologies used for the survey:
+* Laravel
+* PHP
+* MySQL
+* AWS EBS, RDS, & EC2
+* GitHub
        
 ## How it works
 
@@ -29,8 +41,8 @@ var surveyData = [
 ]
 ```
         
-## Inspired By:
-  <a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a>
+### Inspired By:
+<a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a>
 
-  ## Created By:
-  <a href="https://connorjaksik.com" target="_blank">Connor Jaksik</a>
+## Created By:
+<a href="https://connorjaksik.com" target="_blank">Connor Jaksik</a>
