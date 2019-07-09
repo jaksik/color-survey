@@ -1,72 +1,60 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+ <h2>About the Color Survey</h2>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+    <div id="about">
+      
+        <div class="indent-one">
 
-## About Laravel
+            <p class="about-text">Submit entries using the Color Survey to help create data for a machine learning experiment. See how the data is used to train a front-end machine learning model to classify colors at a Denver area meetup in Fall 2019 (check back soon for date and location).</p>
+      
+        </div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+        <h5>------------------------------------------------------------------------------------</h5>
+       
+        <h2>How it works</h2>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+        <p class="indent-one about-text">The survey randomly generates an "R, G, B" value, then displays its corresponding color on the screen. The user will then click the button that best describes the color. The "R, G, B" value and user selected label are logged to a database in a format that looks something like this...</p>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+        <div class="code-block about-text">
+            surveyData= [</br>
+                <div class="indent-one">{</br></div>
+                    <div class="indent-two">label: green-ish,</br></div>
+                    <div class="indent-two">r: 61,</br></div>
+                    <div class="indent-two">g: 106,</br></div>
+                    <div class="indent-two">b: 17</br></div>
+                <div class="indent-one">},</br></div>
+                <div class="indent-one">{</br></div>
+                    <div class="indent-two">label: yellow-ish,</br></div>
+                    <div class="indent-two">r: 225,</br></div>
+                    <div class="indent-two">g: 220,</br></div>
+                    <div class="indent-two">b: 21</br></div>
+                <div class="indent-one">},</br></div>
+                <div class="indent-one">{</br></div>
+                    <div class="indent-two">label: pink-ish,</br></div>
+                    <div class="indent-two">r: 194,</br></div>
+                    <div class="indent-two">g: 34,</br></div>
+                    <div class="indent-two">b: 138</br></div>
+                <div class="indent-one">}</br></div>
+            ]
+        </div>
+        
+        <h5>------------------------------------------------------------------------------------</h5>
+        
+        <div style="text-align:center" class="item-wrapper">
+            <div class="item-container">
+                <h2>Source Code:</h2>
+                <p><a href="https://github.com/jaksik/color-survey" target="_blank">Color Survey Code</a></p>
+            </div>
 
-## Learning Laravel
+            <div class="item-container">
+                <h2>Inspired By:</h2>
+                <p><a href="https://thecodingtrain.com/" target="_blank">The Coding Train</a></p>
+            </div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+            <div class="item-container">
+            <h2>Created By:</h2>
+                <p><a href="https://connorjaksik.com" target="_blank">Connor Jaksik</a></p>
+           </div>
+        </div>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1400 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    </div>
+    
